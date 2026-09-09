@@ -83,7 +83,7 @@ function moveAndroidPackageDirs(appDir: string, oldNamespace: string, newNamespa
 
   const oldParts = oldNamespace.split('.');
   const newParts = newNamespace.split('.');
-  const srcRoots = ['main', 'androidTest', 'test'];
+  const srcRoots = ['main', 'androidTest', 'test', 'debug', 'release'];
 
   for (const root of srcRoots) {
     const javaRoot = path.join(appDir, 'src', root, 'java');
